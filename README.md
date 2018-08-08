@@ -9,12 +9,12 @@ How to run:
 ```python
 from dgb import Dense, predict, train
 
-l1 = Dense(X_train.shape[1], 2000, activation='relu')
+l1 = Dense(X_train.shape[1], 200, activation='relu')
 l2 = Dense(l1.output_dim, 200, activation='relu')
 l3 = Dense(l2.output_dim, 200, activation='relu')
 l4 = Dense(l3.output_dim, 200, activation='relu')
 l5 = Dense(l4.output_dim, 200, activation='relu')
-l6 = Dense(l3.output_dim, 2000, activation='relu')
+l6 = Dense(l3.output_dim, 200, activation='relu')
 l7 = Dense(l1.output_dim, 10, activation='softmax')
 
 net = [l1, l2, l3, l4, l5, l6, l7]
