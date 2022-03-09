@@ -1,5 +1,5 @@
 # Deep gradient boosting
-Deep gradient boosting is a modification of the classic backpropagation algoeithm by replacing the final weight update w_ij = o_i*d_j with ridge linear regression. After the forward and backward passes a final forward pass is performed where at each layer the weight updates are obtained from regressing the inputs to the corresponding residuals d_j. This is equivalent to gradient boosting where succesive functions are fitted to pseudoresiduals.
+Deep gradient boosting is a modification of the classic backpropagation algorithm by replacing the final weight update w_ij = o_i*d_j with ridge linear regression. After the forward and backward passes a final forward pass is performed where at each layer the weight updates are obtained from regressing the inputs to the corresponding residuals d_j. This is equivalent to gradient boosting where succesive functions are fitted to pseudoresiduals.
 
 File dgb_ali.py contains a solution to Ali Rahimi's problem from the "Test of time" talk based on deep gradient boosting
 http://www.argmin.net/2017/12/05/kitchen-sinks/
